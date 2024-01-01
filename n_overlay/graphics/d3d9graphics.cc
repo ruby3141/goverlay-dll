@@ -296,10 +296,7 @@ void D3d9Graphics::beforePresent(IDirect3DDevice9* device)
             _drawWindowSprites();
         }
 
-#if 0
         _drawMainSprite();
-#endif
-
         _drawPopupTipSprite();
         _drawStatutBarSprite();
 
@@ -667,10 +664,8 @@ void D3d9Graphics::_drawWindowSprites()
 {
     for (auto& windowSprite : windowSprites_)
     {
-#if 0
         if (windowSprite->name == "MainOverlay")
             continue;
-#endif
         if (windowSprite->name == "StatusBar")
             continue;
         if (windowSprite->name == "PopupTip")

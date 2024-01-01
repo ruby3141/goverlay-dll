@@ -469,10 +469,8 @@ void D3d10Graphics::_drawWindowSprites()
 {
     for (auto& windowSprite : windowSprites_)
     {
-#if 0
         if (windowSprite->name == "MainOverlay")
             continue;
-#endif
         if (windowSprite->name == "StatusBar")
             continue;
         if (windowSprite->name == "PopupTip")
